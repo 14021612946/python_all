@@ -1,0 +1,6 @@
+f = open ('c.txt', 'w+', encoding="utf-8")
+f.write("张三:123\n")
+f.write("李四:234\n")
+f.write("小红:345\n")
+f.write("小花:456\n")
+f.close()
