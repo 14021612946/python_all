@@ -1,0 +1,22 @@
+-- 创建数据库(指定编码集为万国码utf8)
+create   database  lttest  character   set  utf8;
+
+-- 创建表
+create  table  person(
+	username varchar(20),
+	age int,
+	salary double(5,2),-- xxx.xx  230.63
+	sex varchar(4)
+);
+-- 插入数据
+insert into  person   values("张家伟",35,600.36,"女");
+
+-- 查询表中数据
+select  *   from  person;
+
+-- 删除
+delete  from  person  where username = "张家伟";
+
+-- 修改
+update person  set   salary  = salary - 200  where  username = "贾生";
+
